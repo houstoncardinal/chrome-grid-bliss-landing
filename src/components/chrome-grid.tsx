@@ -201,6 +201,20 @@ function GridOfBoxes() {
 export const ChromeGrid = () => {
   return (
     <div className="h-svh w-screen bg-black relative z-0">
+      {/* Title Overlay */}
+      <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+        <div className="text-center max-w-4xl px-6">
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold text-white mb-8 tracking-tight">
+            Cardinal AI
+          </h1>
+          <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl mx-auto">
+            Experience the future of artificial intelligence with our cutting-edge platform. 
+            Transform your business with intelligent automation, predictive analytics, and 
+            seamless integration capabilities.
+          </p>
+        </div>
+      </div>
+      
       <Canvas camera={{ 
         position: [-9.31, 12, 24.72], 
         rotation: [-0.65, -0.2, -0.13],
