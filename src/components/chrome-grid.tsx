@@ -1,3 +1,4 @@
+
 'use client'
 
 import React, { useRef, useState, useMemo, useEffect } from 'react'
@@ -107,7 +108,6 @@ const Box = ({
             rotation={[Math.PI / 2, 0, 0]}
         >
             <meshPhysicalMaterial 
-                attach="material"
                 color="#232323"
                 roughness={0.5}
                 metalness={1}
@@ -200,7 +200,7 @@ function GridOfBoxes() {
 
 export const ChromeGrid = () => {
   return (
-    <div className="h-full w-full bg-black relative z-0">
+    <div className="h-svh w-screen bg-black relative z-0">
       <Canvas camera={{ 
         position: [-9.31, 12, 24.72], 
         rotation: [-0.65, -0.2, -0.13],
