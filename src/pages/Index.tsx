@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { ChromeGrid } from "@/components/chrome-grid";
+import { Header } from "@/components/Header";
+import { HeroSection } from "@/components/HeroSection";
+import { FeaturesSection } from "@/components/FeaturesSection";
+import { CTASection } from "@/components/CTASection";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <Header />
+      <main>
+        <HeroSection />
+        <div className="relative py-20 overflow-hidden">
+          <ChromeGrid />
+        </div>
+        <FeaturesSection />
+        <CTASection />
+      </main>
     </div>
   );
 };
